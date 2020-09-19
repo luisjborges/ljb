@@ -8,9 +8,9 @@
 jQuery(document).ready(function(){
 
 	"use strict";
-
+	
 	// here all ready functions
-
+	
 	shane_tm_progress();
 	shane_tm_vcard_menu();
 	shane_tm_cursor();
@@ -24,12 +24,12 @@ jQuery(document).ready(function(){
 	shane_tm_contact_form();
 	shane_tm_ripple();
 	shane_tm_videoplayer();
-
+	
 	jQuery(window).on('resize',function(){
 		shane_tm_isotope();
 		shane_tm_portfolio();
 	});
-
+	
 	jQuery(window).load('body', function(){
 		setTimeout(function(){
         jQuery('.shane_tm_preloader').addClass('loaded');
@@ -38,7 +38,7 @@ jQuery(document).ready(function(){
         shane_tm_isotope();
     }, 5000);
 	});
-
+	
 });
 
 // -----------------------------------------------------
@@ -50,11 +50,11 @@ jQuery(document).ready(function(){
 // -----------------------------------------------------
 
 function shane_tm_progress(){
-
+	
 	"use strict";
-
+	
 	var list	= jQuery('.shane_tm_skills ul li');
-
+	
 	list.each(function(){
 		var element		= jQuery(this);
 		var progressVal	= element.find('.progress').data('value');
@@ -68,13 +68,13 @@ function shane_tm_progress(){
 // -----------------------------------------------------
 
 function shane_tm_vcard_menu(){
-
+	
 	"use strict";
-
+	
 	var list	 = jQuery('.shane_tm_menu ul li');
 	var vContent = jQuery('.shane_tm_all_wrap');
 	var vSection = jQuery('.shane_tm_section');
-
+	
 	list.on('click',function(){
 		var element = jQuery(this);
 		var myHref	= element.find('a').attr('href');
@@ -93,9 +93,9 @@ function shane_tm_vcard_menu(){
 
 function shane_tm_cursor(){
     "use strict";
-
+	
 	var myCursor	= jQuery('.mouse-cursor');
-
+	
 	if(myCursor.length){
 		if ($("body")) {
         const e = document.querySelector(".cursor-inner"),
@@ -118,17 +118,17 @@ function shane_tm_cursor(){
 // -----------------------------------------------------
 
 function shane_tm_partners(){
-
+	
 	"use strict";
-
+	
 		var carouse1	= jQuery('.shane_tm_partners .owl-carousel');
-
+		
 		var rtlMode	= false;
-
+	
 		if(jQuery('body').hasClass('rtl')){
 			rtlMode = 'true';
 		}
-
+		
 		carouse1.owlCarousel({
 			loop: true,
 			items: 5,
@@ -151,15 +151,15 @@ function shane_tm_partners(){
 				1920:{items:5}
 			}
 		});
-
+	
 		var carouse2			= jQuery('.shane_tm_testimonials .owl-carousel');
-
+	
 		var rtlMode	= false;
-
+	
 		if(jQuery('body').hasClass('rtl')){
 			rtlMode = 'true';
 		}
-
+	
 		carouse2.owlCarousel({
 			loop: true,
 			items: 2,
@@ -183,15 +183,15 @@ function shane_tm_partners(){
 			}
 		});
 		shane_tm_imgtosvg();
-
+	
 		var carouse3			= jQuery('.shane_tm_sertificate .owl-carousel');
-
+	
 		var rtlMode	= false;
-
+	
 		if(jQuery('body').hasClass('rtl')){
 			rtlMode = 'true';
 		}
-
+	
 		carouse3.owlCarousel({
 			loop: true,
 			items: 2,
@@ -221,12 +221,12 @@ function shane_tm_partners(){
 // -------------------------------------------------
 
 function shane_tm_kenburn_slider(){
-
+	
 	"use strict";
-
+	
 		jQuery(function() {
 			jQuery('.shane_tm_fixed_image .overlay_slider').vegas({
-			timer:false,
+			timer:false,	
 			animation: [ 'kenburnsUp',  'kenburnsLeft', 'kenburnsRight'],
 			delay:7000,
 
@@ -245,11 +245,11 @@ function shane_tm_kenburn_slider(){
 // -----------------------------------------------------
 
 function shane_tm_imgtosvg(){
-
+	
 	"use strict";
-
+	
 	jQuery('img.svg').each(function(){
-
+		
 		var jQueryimg 		= jQuery(this);
 		var imgClass		= jQueryimg.attr('class');
 		var imgURL			= jQueryimg.attr('src');
@@ -280,7 +280,7 @@ function shane_tm_imgtosvg(){
 
 function shane_tm_popup(){
 		"use strict";
-
+	
 		jQuery('.gallery_zoom').each(function() { // the containers for all your galleries
 			jQuery(this).magnificPopup({
 				delegate: 'a.zoom', // the selector for gallery item
@@ -320,11 +320,11 @@ wow.init();
 // -----------------------------------------------------
 
 function shane_tm_data_images(){
-
+	
 	"use strict";
-
+	
 	var data			= jQuery('*[data-img-url]');
-
+	
 	data.each(function(){
 		var element			= jQuery(this);
 		var url				= element.data('img-url');
@@ -336,7 +336,7 @@ function shane_tm_data_images(){
 // -----------------    PORTFOLIO    ---------------
 // -------------------------------------------------
 
-// filterable
+// filterable 
 
 function shane_tm_portfolio(){
 
@@ -349,10 +349,10 @@ function shane_tm_portfolio(){
 		var filter		 = jQuery('.shane_tm_works .portfolio_filter ul');
 
 		if(filter.length){
-			// Isotope Filter
+			// Isotope Filter 
 			filter.find('a').on('click', function(){
 				var selector = jQuery(this).attr('data-filter');
-				list.isotope({
+				list.isotope({ 
 					filter				: selector,
 					animationOptions	: {
 						duration			: 750,
@@ -361,14 +361,14 @@ function shane_tm_portfolio(){
 					}
 				});
 				return false;
-			});
+			});	
 
 			// Change active element class
 			filter.find('a').on('click', function() {
 				filter.find('a').removeClass('current');
 				jQuery(this).addClass('current');
 				return false;
-			});
+			});	
 		}
 	}
 }
@@ -378,9 +378,9 @@ function shane_tm_portfolio(){
 // -----------------------------------------------------
 
 function shane_tm_isotope(){
-
+	
 	"use strict";
-
+	
 	var masonry = $('.masonry');
 	if($().isotope){
 		masonry.each(function(){
@@ -392,63 +392,63 @@ function shane_tm_isotope(){
 			});
 		});
 	}
-
+	
 }
 
 // -----------------------------------------------------
 // ----------------    CONTACT FORM    -----------------
 // -----------------------------------------------------
 
-// function shane_tm_contact_form(){
-
-// 	"use strict";
-
-// 	jQuery(".contact_form #send_message").on('click', function(){
-
-// 		var name 		= jQuery(".contact_form #name").val();
-// 		var email 		= jQuery(".contact_form #email").val();
-// 		var message 	= jQuery(".contact_form #message").val();
-// 		var subject 	= jQuery(".contact_form #subject").val();
-// 		var success     = jQuery(".contact_form .returnmessage").data('success');
-
-// 		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
-// 		//checking for blank fields
-// 		if(name===''||email===''||message===''){
-
-// 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
-// 		}
-// 		else{
-// 			// Returns successful data submission message when the entered information is stored in database.
-// 			jQuery.post("modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
-
-// 				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
-
-
-// 				if(jQuery(".contact_form .returnmessage span.contact_error").length){
-// 					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);
-// 				}else{
-// 					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
-// 					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
-// 				}
-
-// 				if(data===""){
-// 					jQuery("#contact_form")[0].reset();//To reset form fields on success
-// 				}
-
-// 			});
-// 		}
-// 		return false;
-// 	});
-// }
+function shane_tm_contact_form(){
+	
+	"use strict";
+	
+	jQuery(".contact_form #send_message").on('click', function(){
+		
+		var name 		= jQuery(".contact_form #name").val();
+		var email 		= jQuery(".contact_form #email").val();
+		var message 	= jQuery(".contact_form #message").val();
+		var subject 	= jQuery(".contact_form #subject").val();
+		var success     = jQuery(".contact_form .returnmessage").data('success');
+	
+		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
+		//checking for blank fields	
+		if(name===''||email===''||message===''){
+			
+			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
+		}
+		else{
+			// Returns successful data submission message when the entered information is stored in database.
+			jQuery.post("modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
+				
+				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
+				
+				
+				if(jQuery(".contact_form .returnmessage span.contact_error").length){
+					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);		
+				}else{
+					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
+					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
+				}
+				
+				if(data===""){
+					jQuery("#contact_form")[0].reset();//To reset form fields on success
+				}
+				
+			});
+		}
+		return false; 
+	});
+}
 
 // -------------------------------------------------
 // -------------  RIPPLE  --------------------------
 // -------------------------------------------------
 
 function shane_tm_ripple(){
-
+	
 	"use strict";
-
+	
 	jQuery('#ripple').ripples({
 			resolution: 500,
 			dropRadius: 20,
