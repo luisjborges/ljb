@@ -41,14 +41,18 @@
 
 <body>  <!-- DARK MODE: add class "dark" Example: <body class="dark"> RTL MODE: add class "rtl" Example: <body class="rtl"> -->
 
-	<!-- PRELOADER -->
-	<div class="shane_tm_preloader">
-		<div class="spinner_wrap">
-			<div class="spinner"></div>
-		</div>
-	</div>
-	<!-- /PRELOADER -->
-
+<!-- Preloader Start -->
+<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="assets/img/logo/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Preloader Start -->
 
 <!-- WRAPPER ALL -->
 <div class="shane_tm_all_wrap" data-magic-cursor="show" data-color="crimson" data-menu-position="" data-menu-style="">
@@ -916,6 +920,16 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap">
         </script>
 <script src="js/init.js"></script>
+
+<script>
+  /* 1. Preloader */
+    $(window).on('load', function () {
+      $('#preloader-active').delay(450).fadeOut('slow');
+      $('body').delay(450).css({
+        'overflow': 'visible'
+      });
+    });
+</script>
 <!-- /SCRIPTS -->
 
 </body>
