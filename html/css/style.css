@@ -89,13 +89,13 @@ img.svg{
   z-index: 9999999999999999;
   height: 100%;
   width: 100%;
-	
+
   -webkit-transition: .2s all ease;
   -o-transition: .2s all ease;
   transition: .2s all ease;
   -webkit-transition-delay: .5s;
   -o-transition-delay: .5s;
-  transition-delay: .5s; }  
+  transition-delay: .5s; }
 .shane_tm_preloader .spinner_wrap{
 	position: absolute;
 	top: 50%;
@@ -114,20 +114,20 @@ img.svg{
     height: 50%;
     width: 100%;
     background-color: #100e17;
-	
+
     -webkit-transition: .7s all ease;
     -o-transition: .7s all ease;
     transition: .7s all ease;
 }
 .shane_tm_preloader:before{
     top: 0;
-    left: 0; 
+    left: 0;
 }
 .shane_tm_preloader:after{
     bottom: 0;
-	left: 0; 
+	left: 0;
 }
-.shane_tm_preloader.loaded:before, 
+.shane_tm_preloader.loaded:before,
 .shane_tm_preloader.loaded:after{height: 0%;}
 .shane_tm_fixed_image{
 	position: fixed;
@@ -261,13 +261,13 @@ img.svg{
 }
 .shane_tm_button a:before{
 	position: absolute;
-	content:""; 
+	content:"";
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
 	width: 51%;
 	background-color: #e54b4b;
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -276,13 +276,13 @@ img.svg{
 }
 .shane_tm_button a:after{
 	position: absolute;
-	content:""; 
+	content:"";
 	top: 0px;
 	bottom: 0px;
 	right: 0px;
 	width: 51%;
 	background-color: #e54b4b;
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -312,7 +312,7 @@ img.svg{
 	margin: 0px;
 	text-align: center;
 	border-bottom: 1px solid rgba(0,0,0,.15);
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -451,7 +451,7 @@ img.svg{
 	margin: 0px;
 	text-align: center;
 	border-bottom: 1px solid rgba(0,0,0,.15);
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -799,7 +799,7 @@ img.svg{
     margin-bottom: 13px;
 }
 .shane_tm_facts ul li .list_inner h3{
-	font-size: 25px;
+	font-size: 19px;
 	font-weight: 700;
 	margin-bottom: 8px;
 }
@@ -1079,7 +1079,7 @@ body.dark .shane_tm_works .portfolio_filter ul li a.current{color: #e54b4b;}
 	padding: 20px 20px 11px 20px;
 	position: relative;
 	transform: translateY(100%);
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -1208,7 +1208,7 @@ body.dark .shane_tm_works .portfolio_filter ul li a.current{color: #e54b4b;}
 	text-decoration: none;
 	color: #000;
 	display: inline-block;
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -1234,7 +1234,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -1265,7 +1265,7 @@ body.dark .shane_tm_news ul li .title a:hover{
   height: 2px;
   background-color: #000;
   left: -20px;
-	
+
   -webkit-transition: all .3s ease;
      -moz-transition: all .3s ease;
 	  -ms-transition: all .3s ease;
@@ -1347,7 +1347,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	width: 100%;
 	height: auto;
 	clear: both;
-	float: left; 
+	float: left;
 }
 .shane_tm_contact .contact_inner .wrapper{
 	width: 100%;
@@ -1404,7 +1404,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 .shane_tm_contact .fields .last textarea:focus{
 	outline: none;
 	border: 1px solid rgba(0,0,0,.5);
-} 
+}
 .shane_tm_contact .empty_notice{
 	color: #F52225;
 	margin-bottom: 7px;
@@ -1639,7 +1639,7 @@ body.dark .shane_tm_news ul li .title a:hover{
     filter: alpha(opacity=100);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible;
-	
+
     -webkit-transition: all .7s;
     -moz-transition: all .7s;
     -ms-transition: all .7s;
@@ -1659,7 +1659,7 @@ body.dark .shane_tm_news ul li .title a:hover{
     height: 50%;
     display: block;
     top: 0;
-	
+
     -webkit-animation: scroll-down 2s ease-in-out infinite;
     -ms-animation: scroll-down 2s ease-in-out infinite;
     animation: scroll-down 2s ease-in-out infinite;;
@@ -1692,7 +1692,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	clear: both;
 	float: left;
 	margin-bottom: 100px;
-}  
+}
 .shane_tm_portfolio_single .main_details .details_inner{
 	width: 100%;
 	height: auto;
@@ -1874,7 +1874,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	clear: both;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;	
+	justify-content: space-between;
 }
 .shane_tm_portfolio_single .pagination a{
 	text-decoration: none;
@@ -2007,7 +2007,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	width: 100%;
 	height: auto;
 	clear: both;
-	float: left; 
+	float: left;
 	margin-bottom: 30px;
 }
 .shane_tm_blog_single .title h3{
@@ -2165,7 +2165,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	color: #FFFFFF;
 	font-weight: 600;
 	font-family: "Saira";
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -2210,7 +2210,7 @@ body.dark .shane_tm_news ul li .title a:hover{
     border-bottom: 1px solid rgba(0,0,0,.3);
     color: #000;
     padding-left: 0px !important;
-	
+
 	-webkit-transition: all .2s ease;
 	   -moz-transition: all .2s ease;
 	    -ms-transition: all .2s ease;
@@ -2230,7 +2230,7 @@ body.dark .shane_tm_news ul li .title a:hover{
     color: #000;
     padding-left: 0px !important;
     height: 44px;
-    
+
 	-webkit-transition: all .2s ease;
 	   -moz-transition: all .2s ease;
 	    -ms-transition: all .2s ease;
@@ -2337,7 +2337,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 .shane_tm_leftside .social ul li a{
 	text-decoration-skip: none;
 	color: #000;
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -2372,13 +2372,13 @@ body.dark .shane_tm_news ul li .title a:hover{
 }
 .shane_tm_button_extra a:before{
 	position: absolute;
-	content:""; 
+	content:"";
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
 	width: 51%;
 	background-color: #e54b4b;
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -2387,13 +2387,13 @@ body.dark .shane_tm_news ul li .title a:hover{
 }
 .shane_tm_button_extra a:after{
 	position: absolute;
-	content:""; 
+	content:"";
 	top: 0px;
 	bottom: 0px;
 	right: 0px;
 	width: 51%;
 	background-color: #e54b4b;
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -2455,7 +2455,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	background-color: #fff;
 	z-index: 15;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.09);
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -2484,7 +2484,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 .shane_tm_sidebar .inner .menu ul{
 	margin: 0px;
 	list-style-type: none;
-	width: 100%;	
+	width: 100%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -2525,7 +2525,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	left: 0%;
 	top: 50%;
 	transform: translateY(-50%);
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -2552,7 +2552,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 .shane_tm_sidebar .inner .bottom ul li a{
 	text-decoration: none;
 	color: #000;
-	
+
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -2642,7 +2642,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	.shane_tm_leftside{width: 350px;}
 	.shane_tm_extra_section{padding-left: 350px;}
 	.shane_tm_leftside .name h3{font-size: 30px;}
-	
+
 	.shane_tm_sidebar{width: 300px;}
 	.shane_tm_sidebar_demo_rightpart{padding-left: 300px;}
 }
@@ -2742,7 +2742,7 @@ body.dark .shane_tm_news ul li .title a:hover{
 	.shane_tm_menu_extra ul li a{padding: 0px;color: #fff;}
 	.shane_tm_menu_extra ul li.active a{color: #000;}
 	.shane_tm_extra_wrapper_all{height: auto;margin: 0px 0px 0px 0px !important;}
-	
+
 	.shane_tm_sidebar {display: none;}
 	.shane_tm_sidebar_demo_rightpart{padding-left: 0px;}
 	.shane_tm_sidebar_hero .shane_tm_down{left: 20px;}
