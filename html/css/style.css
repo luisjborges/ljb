@@ -23,6 +23,14 @@
 /*	01) SHANE BASE
 /*---------------------------------------------------*/
 
+#certificate-de {
+  bottom: -350px;
+}
+
+#certificate-jp {
+  bottom: -250px;
+}
+
 html {
 	overflow-x: hidden;
 	padding: 0px;
